@@ -32,9 +32,10 @@ const Card = ({ data }) => {
         <div className="modal">
           <div className="overlay" onClick={toggleModal}>
             <div className="modal-content d_flex">
-              <div className="modal-img left">
+              <div className="modal-img left something">
                 <img src={data.image} alt="" />
               </div>
+
               <div className="modal-text right">
                 <span>Featured-Design</span>
                 <h1>{data.title}</h1>
