@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../Card/Card";
+import Card from "./Card/Card";
 import "./portfolio.css";
 import Data from "../Portfolio/portfolio_data";
 const Portfolio = () => {

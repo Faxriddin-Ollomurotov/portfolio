@@ -1,38 +1,38 @@
 .portfolio {
   position: relative;
 }
-.portfolio .box {
+.box {
   border-radius: 10px;
   position: relative;
 }
-.portfolio .box:hover {
-  /* background-color: none; */
+.box:hover {
+  background: none;
   transform: translateY(0);
 }
-.portfolio .img {
+.img {
   height: 300px;
   overflow: hidden;
   transform: 0.5s ease-in;
 }
-.portfolio img {
+.img img {
   width: 100%;
   border-radius: 10px;
   transition: all 0.5s;
 }
-.portfolio .box .img:hover img {
+.box .img:hover img {
   transform: scale(1.2);
 }
-.portfolio .category {
+.category {
   margin: 20px 0 30px 0;
   text-transform: uppercase;
 }
-.portfolio .category .span {
+.category span {
   color: #ff014f;
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 500;
 }
-.portfolio .arrow {
+.arrow {
   position: absolute;
   right: 30px;
   bottom: 11%;
@@ -41,6 +41,92 @@
   opacity: 0;
   transform: 0.5s;
 }
-.portfolio .title:hover .arrow {
-  /* opacity: 1; */
+.title:hover .arrow {
+  opacity: 1;
 }
+.portfolio h2 {
+  font-size: 18px;
+  transition: 0.5s;
+  padding-bottom: 30px;
+}
+.box:hover h2 {
+  color: #ff014f;
+}
+.box:hover {
+  color: black;
+}
+.portfolio label i {
+  margin-right: 10px;
+}
+/* --------------popup---------- */
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto;
+  font-size: 18px;
+}
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.overlay {
+  background-color: #ecf0f3;
+}
+
+.modal-content {
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  line-height: 1.4;
+  background: #f0f3f5;
+  padding: 14px 28px;
+  min-width: 60%;
+  max-width: 85%;
+  z-index: 99999;
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #fff;
+  padding: 50px;
+  border-radius: 10px;
+}
+.modal-img img {
+  width: 100%;
+  height: 100%;
+}
+.modal-text {
+  padding: 0 100px 0 50px;
+}
+.modal-text h1 {
+  margin: 20px 0px 20px 0;
+  font-size: 30px;
+}
+.modal-text p {
+  font-size: 17px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+.modal-text button {
+  margin-right: 20px;
+  color: #ff014f;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0 0;
+  font-size: 20px;
+}
+.close-modal i {
+  margin: 0;
+}
+/* --------------popup---------- */

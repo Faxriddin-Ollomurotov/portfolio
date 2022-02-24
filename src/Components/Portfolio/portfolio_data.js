@@ -1,4 +1,4 @@
-import IN from "../../assits/in2.jpg";
+import IN from "../../assits/frontend.jpg";
 const Data = [
   {
     id: 1,
