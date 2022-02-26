@@ -2,7 +2,15 @@ import React, { useState } from "react";
 import "./Header.css";
 import LOGO from "../../assits/logo.jpg";
 
-const Header = () => {
+const Header = ({ handleChange }) => {
+  // const [change, setChange] = useState(null);
+
+  // const Change = (e) => {
+  //   setChange(e.target.value);
+  //   // handleChange(change);
+  //   console.log(change);
+  // };
+
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 5);
@@ -14,7 +22,7 @@ const Header = () => {
         <div className="container d_flex">
           <div className="logo align_items_center">
             <img src={LOGO} alt="Meni rasmim" />
-            <h1>Hello</h1>
+            <h1>Fakhriddin</h1>
           </div>
           <div className="navlink">
             <ul
@@ -25,20 +33,12 @@ const Header = () => {
                 <a href="#home">home</a>
               </li>
               <li>
-                <a href="#features">features</a>
-              </li>
-              <li>
                 <a href="#portfolio">portfolio</a>
               </li>
               <li>
                 <a href="#resume">resume</a>
               </li>
-              <li>
-                <a href="#clients">clients</a>
-              </li>
-              <li>
-                <a href="#blog">blog</a>
-              </li>
+
               <li>
                 <a href="#contact">contact</a>
               </li>

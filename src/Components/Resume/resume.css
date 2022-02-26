@@ -60,3 +60,13 @@
   color: antiquewhite;
   font-size: 20px;
 }
+@media (max-width: 768px) {
+  .display-flex {
+    flex-direction: column-reverse;
+  }
+  .rasm img {
+    margin: 10px 20px;
+    width: 80vw;
+    height: auto;
+  }
+}

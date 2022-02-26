@@ -48,24 +48,28 @@ const Contact = () => {
                 </div>
                 <div className="details">
                   <h1>Nevine Acotanze</h1>
-                  <p>
-                    I am aviable for freelance work. Connect with me via and
-                    call in to my account.
-                  </p>
+                  <p>Connect with me via and call in to my account.</p>
+                  <br />
                   <p>Phone: +998915111366</p>
                   <p>Email: faxriddin3475@gmail.com</p>
                   <br />
                   <span>FIND WITH ME</span>
                   <div className="button f_flex">
-                    <button className="btn_shadow">
-                      <i className="fab fa-facebook-f fa-2xl fac-color"></i>
-                    </button>
-                    <button className="btn_shadow">
-                      <i className="fab fa-instagram fa-2xl ins-color"></i>
-                    </button>
-                    <button className="btn_shadow">
-                      <i className="fab fa-telegram fa-2xl tel-color"></i>
-                    </button>
+                    <a href="https://www.facebook.com/ollomurotov.faxriddin">
+                      <button className="btn_shadow">
+                        <i className="fab fa-facebook-f fa-2xl fac-color"></i>
+                      </button>
+                    </a>
+                    <a href="https://www.instagram.com/faxriddin_ollomurotov/">
+                      <button className="btn_shadow">
+                        <i className="fab fa-instagram fa-2xl ins-color"></i>
+                      </button>
+                    </a>
+                    <a href="https://telegram.me/Faxriddin_Ollomurotov">
+                      <button className="btn_shadow">
+                        <i className="fab fa-telegram fa-2xl tel-color"></i>
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -73,7 +77,7 @@ const Contact = () => {
             <div className="right box_shadow">
               <form onSubmit={formSubmit}>
                 <div className="f_flex">
-                  <div className="input row">
+                  <div className="input row row1">
                     <span>YOUR NAME</span>
                     <input
                       type="text"
